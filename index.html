@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Alert</title>
+</head>
+<body>
+    <button type="button" id="sweetAlert" onclick="Swal.fire(
+        'Good job!',
+        'You clicked the button!',
+        'success'
+      )">
+        Click Me
+    </button>
+    <button type="button" id="sweetAlert2">
+        Click Me
+    </button>
+
+    <script src="package/dist/sweetalert2.all.min.js"></script>
+    <script>
+        const sweetAlert = document.querySelector('#sweetAlert2');
+        sweetAlert.addEventListener('click', function() {
+            Swal.fire({
+                title: 'Good Job',
+                text: 'You Clicked the button',
+                type: 'warning'
+            })
+        })
+    </script>
+</body>
+</html>
