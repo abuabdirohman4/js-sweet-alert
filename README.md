@@ -1,2 +1,2 @@
-# 3party-01-sweetalert
+# Sweet Alert
 Try Sweet Alert 2
